@@ -38,6 +38,11 @@ namespace EnsaProject {
 	protected:
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::BindingSource^ bindingSource1;
+
+
+
+
+
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
@@ -63,9 +68,10 @@ namespace EnsaProject {
 			// checkBox1
 			// 
 			this->checkBox1->AutoSize = true;
-			this->checkBox1->Location = System::Drawing::Point(271, 262);
+			this->checkBox1->Location = System::Drawing::Point(241, 210);
+			this->checkBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(113, 24);
+			this->checkBox1->Size = System::Drawing::Size(95, 20);
 			this->checkBox1->TabIndex = 0;
 			this->checkBox1->Text = L"checkBox1";
 			this->checkBox1->UseVisualStyleBackColor = true;
@@ -73,20 +79,22 @@ namespace EnsaProject {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(529, 141);
+			this->button1->Location = System::Drawing::Point(470, 113);
+			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(67, 18);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"button1";
 			this->button1->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(680, 442);
+			this->ClientSize = System::Drawing::Size(604, 354);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->checkBox1);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bindingSource1))->EndInit();
@@ -97,5 +105,6 @@ namespace EnsaProject {
 #pragma endregion
 	private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+
+};
 }
