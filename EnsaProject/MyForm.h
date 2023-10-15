@@ -39,6 +39,7 @@ namespace EnsaProject {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::BindingSource^ bindingSource1;
 <<<<<<< HEAD
 
@@ -240,6 +241,26 @@ private: System::Void InitializeComponent() {
 	this->ClientSize = System::Drawing::Size(282, 253);
 	this->Controls->Add(this->button3);
 	this->Controls->Add(this->button2);
+	this->Name = L"MyForm";
+	this->ResumeLayout(false);
+}
+private: System::Void InitializeComponent() {
+	this->button4 = (gcnew System::Windows::Forms::Button());
+	this->SuspendLayout();
+	// 
+	// button4
+	// 
+	this->button4->Location = System::Drawing::Point(120, 111);
+	this->button4->Name = L"button4";
+	this->button4->Size = System::Drawing::Size(75, 23);
+	this->button4->TabIndex = 0;
+	this->button4->Text = L"button4";
+	this->button4->UseVisualStyleBackColor = true;
+	// 
+	// MyForm
+	// 
+	this->ClientSize = System::Drawing::Size(278, 244);
+	this->Controls->Add(this->button4);
 	this->Name = L"MyForm";
 	this->ResumeLayout(false);
 }
