@@ -37,12 +37,19 @@ namespace EnsaProject {
 	private: System::Windows::Forms::CheckBox^ checkBox1;
 	protected:
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::BindingSource^ bindingSource1;
+<<<<<<< HEAD
 
 
 
 
 
+=======
+	private: System::ComponentModel::BackgroundWorker^ backgroundWorker1;
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button3;
+>>>>>>> 94112e21b1a931bfffaf306cbe7f15bd5c4af5bb
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
@@ -62,6 +69,9 @@ namespace EnsaProject {
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->bindingSource1 = (gcnew System::Windows::Forms::BindingSource(this->components));
+			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bindingSource1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -87,11 +97,35 @@ namespace EnsaProject {
 			this->button1->Text = L"button1";
 			this->button1->UseVisualStyleBackColor = true;
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(224, 92);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 2;
+			this->button2->Text = L"button2";
+			this->button2->UseVisualStyleBackColor = true;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(450, 32);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(75, 23);
+			this->button3->TabIndex = 3;
+			this->button3->Text = L"button3";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+<<<<<<< HEAD
 			this->ClientSize = System::Drawing::Size(604, 354);
+=======
+			this->ClientSize = System::Drawing::Size(680, 442);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->button2);
+>>>>>>> 94112e21b1a931bfffaf306cbe7f15bd5c4af5bb
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->checkBox1);
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
@@ -106,5 +140,45 @@ namespace EnsaProject {
 	private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
 
+private: System::Void InitializeComponent() {
+	this->button2 = (gcnew System::Windows::Forms::Button());
+	this->SuspendLayout();
+	// 
+	// button2
+	// 
+	this->button2->Location = System::Drawing::Point(193, 85);
+	this->button2->Name = L"button2";
+	this->button2->Size = System::Drawing::Size(19, 47);
+	this->button2->TabIndex = 0;
+	this->button2->Text = L"button2";
+	this->button2->UseVisualStyleBackColor = true;
+	// 
+	// MyForm
+	// 
+	this->ClientSize = System::Drawing::Size(282, 253);
+	this->Controls->Add(this->button2);
+	this->Name = L"MyForm";
+	this->ResumeLayout(false);
+}
+private: System::Void InitializeComponent() {
+	this->button2 = (gcnew System::Windows::Forms::Button());
+	this->SuspendLayout();
+	// 
+	// button2
+	// 
+	this->button2->Location = System::Drawing::Point(43, 62);
+	this->button2->Name = L"button2";
+	this->button2->Size = System::Drawing::Size(19, 47);
+	this->button2->TabIndex = 0;
+	this->button2->Text = L"button2";
+	this->button2->UseVisualStyleBackColor = true;
+	// 
+	// MyForm
+	// 
+	this->ClientSize = System::Drawing::Size(282, 253);
+	this->Controls->Add(this->button2);
+	this->Name = L"MyForm";
+	this->ResumeLayout(false);
+}
 };
 }
