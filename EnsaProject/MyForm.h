@@ -264,5 +264,28 @@ private: System::Void InitializeComponent() {
 	this->Name = L"MyForm";
 	this->ResumeLayout(false);
 }
+private: System::Void InitializeComponent() {
+	this->button4 = (gcnew System::Windows::Forms::Button());
+	this->SuspendLayout();
+	// 
+	// button4
+	// 
+	this->button4->Location = System::Drawing::Point(120, 111);
+	this->button4->Name = L"button4";
+	this->button4->Size = System::Drawing::Size(75, 23);
+	this->button4->TabIndex = 0;
+	this->button4->Text = L"button4";
+	this->button4->UseVisualStyleBackColor = true;
+	this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
+	// 
+	// MyForm
+	// 
+	this->ClientSize = System::Drawing::Size(278, 244);
+	this->Controls->Add(this->button4);
+	this->Name = L"MyForm";
+	this->ResumeLayout(false);
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
