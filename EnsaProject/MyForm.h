@@ -38,6 +38,8 @@ namespace EnsaProject {
 	protected:
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::BindingSource^ bindingSource1;
+	private: System::ComponentModel::BackgroundWorker^ backgroundWorker1;
+	private: System::Windows::Forms::Button^ button2;
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
@@ -57,6 +59,8 @@ namespace EnsaProject {
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->bindingSource1 = (gcnew System::Windows::Forms::BindingSource(this->components));
+			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bindingSource1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -80,11 +84,21 @@ namespace EnsaProject {
 			this->button1->Text = L"button1";
 			this->button1->UseVisualStyleBackColor = true;
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(224, 92);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 2;
+			this->button2->Text = L"button2";
+			this->button2->UseVisualStyleBackColor = true;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(680, 442);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->checkBox1);
 			this->Name = L"MyForm";
