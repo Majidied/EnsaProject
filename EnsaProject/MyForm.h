@@ -40,6 +40,9 @@ namespace EnsaProject {
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::CheckBox^ checkBox2;
+	private: System::Windows::Forms::CheckedListBox^ checkedListBox1;
+	private: System::Windows::Forms::DomainUpDown^ domainUpDown1;
 	private: System::Windows::Forms::BindingSource^ bindingSource1;
 <<<<<<< HEAD
 
@@ -265,27 +268,46 @@ private: System::Void InitializeComponent() {
 	this->ResumeLayout(false);
 }
 private: System::Void InitializeComponent() {
-	this->button4 = (gcnew System::Windows::Forms::Button());
+	this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
+	this->checkedListBox1 = (gcnew System::Windows::Forms::CheckedListBox());
+	this->domainUpDown1 = (gcnew System::Windows::Forms::DomainUpDown());
 	this->SuspendLayout();
 	// 
-	// button4
+	// checkBox2
 	// 
-	this->button4->Location = System::Drawing::Point(120, 111);
-	this->button4->Name = L"button4";
-	this->button4->Size = System::Drawing::Size(75, 23);
-	this->button4->TabIndex = 0;
-	this->button4->Text = L"button4";
-	this->button4->UseVisualStyleBackColor = true;
-	this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
+	this->checkBox2->AutoSize = true;
+	this->checkBox2->Location = System::Drawing::Point(82, 99);
+	this->checkBox2->Name = L"checkBox2";
+	this->checkBox2->Size = System::Drawing::Size(95, 20);
+	this->checkBox2->TabIndex = 0;
+	this->checkBox2->Text = L"checkBox2";
+	this->checkBox2->UseVisualStyleBackColor = true;
+	// 
+	// checkedListBox1
+	// 
+	this->checkedListBox1->FormattingEnabled = true;
+	this->checkedListBox1->Location = System::Drawing::Point(82, 138);
+	this->checkedListBox1->Name = L"checkedListBox1";
+	this->checkedListBox1->Size = System::Drawing::Size(120, 89);
+	this->checkedListBox1->TabIndex = 1;
+	// 
+	// domainUpDown1
+	// 
+	this->domainUpDown1->Location = System::Drawing::Point(82, 49);
+	this->domainUpDown1->Name = L"domainUpDown1";
+	this->domainUpDown1->Size = System::Drawing::Size(120, 22);
+	this->domainUpDown1->TabIndex = 2;
+	this->domainUpDown1->Text = L"domainUpDown1";
 	// 
 	// MyForm
 	// 
-	this->ClientSize = System::Drawing::Size(278, 244);
-	this->Controls->Add(this->button4);
+	this->ClientSize = System::Drawing::Size(282, 253);
+	this->Controls->Add(this->domainUpDown1);
+	this->Controls->Add(this->checkedListBox1);
+	this->Controls->Add(this->checkBox2);
 	this->Name = L"MyForm";
 	this->ResumeLayout(false);
-}
-private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->PerformLayout();
 }
 };
 }
